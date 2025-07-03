@@ -3,45 +3,134 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>두드림원 - 보안전문회사</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <title>두드림원</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+    }
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 18px;
+    }
+    nav {
+      background-color: #f1f1f1;
+      display: flex;
+      justify-content: flex-end;
+      padding: 10px 20px;
+    }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    .container {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+      background-color: white;
+    }
+    .title {
+      font-size: 24px;
+      text-align: center;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+    .subtitle {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .btn {
+      display: block;
+      margin: 0 auto 30px;
+      padding: 10px 20px;
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      width: 150px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .section-title {
+      font-size: 20px;
+      margin-top: 40px;
+      margin-bottom: 10px;
+      font-weight: bold;
+      color: #003366;
+    }
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .grid div {
+      flex: 1 1 250px;
+      background-color: #f1f1f1;
+      padding: 15px;
+      border-radius: 5px;
+    }
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      background-color: #eee;
+      font-size: 14px;
+    }
+  </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body>
 
-  <!-- Header -->
-  <header class="bg-slate-800 text-white p-4">
-    <div class="max-w-6xl mx-auto flex justify-between items-center">
-      <h1 class="text-2xl font-bold">두드림원</h1>
-      <nav class="space-x-4 text-sm hidden md:block">
-        <a href="index.html" class="hover:underline">홈</a>
-        <a href="about.html" class="hover:underline">회사소개</a>
-        <a href="services.html" class="hover:underline">서비스</a>
-        <a href="clients.html" class="hover:underline">실적</a>
-        <a href="gallery.html" class="hover:underline">갤러리</a>
-        <a href="contact.html" class="hover:underline">문의</a>
-      </nav>
-    </div>
+  <nav>
+    <a href="#">회사소개</a>
+    <a href="#">서비스</a>
+    <a href="#">실적</a>
+    <a href="#">문의</a>
+  </nav>
+
+  <header>
+    두드림원
   </header>
 
-  <!-- Hero -->
-  <section class="bg-slate-100 py-16 text-center">
-    <h2 class="text-3xl md:text-4xl font-semibold mb-4">당신의 안전, 우리의 사명입니다</h2>
-    <p class="text-lg">특수 보안 전문기업 두드림원</p>
-    <a href="contact.html" class="mt-6 inline-block bg-slate-800 text-white px-6 py-2 rounded hover:bg-slate-700">문의하기</a>
-  </section>
+  <div class="container">
+    <div class="title">당신의 안전, 우리의 사명입니다</div>
+    <div class="subtitle">특수 보안 전문기업 두드림원</div>
+    <a href="#" class="btn">문의하기</a>
 
-  <!-- Main Section Placeholder -->
-  <section class="py-12 px-4 max-w-4xl mx-auto text-center">
-    <h3 class="text-2xl font-bold mb-6 text-slate-800">두드림원 홈페이지에 오신 것을 환영합니다</h3>
-    <p class="text-gray-700">상단 메뉴를 클릭하여 다양한 정보를 확인하실 수 있습니다.</p>
-  </section>
+    <div class="section-title">회사 소개</div>
+    <p>두드림원은 특수 보안 및 경비 서비스를 제공하는 전문 보안회사로, 서울아산병원과 현대오일뱅크 등 다양한 고객사와 함께 안전한 환경을 구축하고 있습니다.</p>
+    <ul>
+      <li>특수 보안 및 경비 전문 기업</li>
+      <li>의료·산업시설 보안 경험 보유</li>
+      <li>서울아산병원, 현대오일뱅크 등과 협력</li>
+    </ul>
 
-  <!-- Footer -->
-  <footer class="bg-slate-800 text-white text-sm text-center p-4">
-    © 2025 두드림원. All rights reserved.
+    <div class="section-title">주요 서비스</div>
+    <div class="grid">
+      <div><strong>시설 경비</strong><br>병원, 공장, 오피스 건물 등 시설의 출입통제 및 순찰 보안 서비스</div>
+      <div><strong>특수 경호</strong><br>인물 보호, 행사 및 VIP 경호 등 특수 목적 보안 서비스</div>
+      <div><strong>출입 통제 시스템 운영</strong><br>보안 게이트, 카드 시스템 등 첨단 장비 운용</div>
+    </div>
+
+    <div class="section-title">주요 실적</div>
+    <div class="grid">
+      <div><strong>서울아산병원</strong><br>의료시설 보안 및 특수 경비 운영</div>
+      <div><strong>현대오일뱅크</strong><br>산업시설 출입통제 및 경비 보안</div>
+    </div>
+
+    <div class="section-title">문의하기</div>
+    <p>전화: 02-1234-5678<br>
+       이메일: contact@dodreamone.co.kr<br>
+       주소: 서울특별시 송파구 예시로 123
+    </p>
+  </div>
+
+  <footer>
+    © 두드림원 | 모든 권리 보유
   </footer>
 
 </body>
 </html>
-
-
