@@ -9,67 +9,215 @@
     rel="stylesheet"
   />
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-white text-gray-800 font-sans">
 
   <!-- 헤더 -->
-  <header class="bg-slate-800 text-white p-4 shadow-md">
-    <div class="max-w-6xl mx-auto flex justify-between items-center">
-      <h1 class="text-3xl font-bold">두드림원</h1>
-      <nav class="space-x-6 text-sm hidden md:flex">
-        <a href="index.html" class="hover:underline font-semibold">홈</a>
-        <a href="about.html" class="hover:underline">회사소개</a>
-        <a href="services.html" class="hover:underline">서비스</a>
-        <a href="clients.html" class="hover:underline">실적</a>
-        <a href="gallery.html" class="hover:underline">갤러리</a>
-        <a href="contact.html" class="hover:underline">문의</a>
+  <header class="bg-gray-900 text-white shadow-md">
+    <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+      <h1 class="text-3xl font-bold tracking-wide cursor-pointer">두드림원</h1>
+      <!-- PC 메뉴 -->
+      <nav class="hidden md:flex space-x-6 text-sm font-medium">
+        <a href="#" class="hover:text-gray-300">가정용</a>
+        <a href="#" class="hover:text-gray-300">매장용</a>
+        <a href="#" class="hover:text-gray-300">사무실/빌딩</a>
+        <a href="#" class="hover:text-gray-300">공장/창고</a>
+        <a href="#" class="hover:text-gray-300">병원/약국</a>
+        <a href="#" class="hover:text-gray-300">학원/학교/기관</a>
+        <a href="#" class="hover:text-gray-300">할인혜택</a>
+        <a href="#" class="hover:text-gray-300">회사소개</a>
       </nav>
+
+      <!-- 모바일 메뉴 버튼 -->
+      <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+        <svg
+          class="w-8 h-8 text-white"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <line x1="3" y1="6" x2="21" y2="6" />
+          <line x1="3" y1="12" x2="21" y2="12" />
+          <line x1="3" y1="18" x2="21" y2="18" />
+        </svg>
+      </button>
     </div>
+
+    <!-- 모바일 메뉴 -->
+    <nav
+      id="mobile-menu"
+      class="hidden md:hidden bg-gray-800 text-white space-y-1 px-4 py-3"
+    >
+      <a href="#" class="block py-2 hover:bg-gray-700 rounded">가정용</a>
+      <a href="#" class="block py-2 hover:bg-gray-700 rounded">매장용</a>
+      <a href="#" class="block py-2 hover:bg-gray-700 rounded">사무실/빌딩</a>
+      <a href="#" class="block py-2 hover:bg-gray-700 rounded">공장/창고</a>
+      <a href="#" class="block py-2 hover:bg-gray-700 rounded">병원/약국</a>
+      <a href="#" class="block py-2 hover:bg-gray-700 rounded">학원/학교/기관</a>
+      <a href="#" class="block py-2 hover:bg-gray-700 rounded">할인혜택</a>
+      <a href="#" class="block py-2 hover:bg-gray-700 rounded">회사소개</a>
+    </nav>
   </header>
 
-  <!-- 메인 히어로 섹션 -->
+  <!-- 메인 비주얼 -->
   <section
-    class="bg-slate-100 py-20 text-center max-w-4xl mx-auto rounded-lg shadow-md my-12"
+    class="bg-gradient-to-r from-slate-800 to-slate-900 text-white text-center py-24 px-6"
   >
-    <h2 class="text-4xl font-extrabold mb-4 text-slate-800">
-      당신의 안전, 우리의 사명입니다
+    <h2 class="text-4xl md:text-5xl font-extrabold mb-4">
+      당신의 안전, 우리의 최우선 사명
     </h2>
-    <p class="text-lg text-gray-700 mb-8">
-      두드림원은 특수 보안 업무와 시설 경비를 전문적으로 수행하는 회사입니다.
+    <p class="max-w-3xl mx-auto text-lg md:text-xl mb-8">
+      두드림원은 특수 보안 서비스로 가정, 사업장, 병원 등 다양한 분야에서 고객의 안전을 지킵니다.
     </p>
     <a
-      href="contact.html"
-      class="inline-block bg-slate-800 text-white px-8 py-3 rounded hover:bg-slate-700 transition"
+      href="#contact"
+      class="inline-block bg-indigo-600 hover:bg-indigo-700 transition px-8 py-3 rounded font-semibold"
       >문의하기</a
     >
   </section>
 
-  <!-- 회사 주요 내용 소개 -->
-  <section class="max-w-5xl mx-auto px-6 py-10">
-    <h3 class="text-2xl font-bold mb-6 text-slate-900">회사 소개</h3>
-    <p class="text-gray-700 leading-relaxed mb-4">
-      2013년에 설립된 두드림원은 서울아산병원, 현대오일뱅크 등 굴지의 대기업과 협력하여 특수경비 및 시설경비 업무를 안정적으로 수행하고 있습니다.
-    </p>
-    <p class="text-gray-700 leading-relaxed">
-      특수보안과 경호, 행사대행, 주차관리 등 다양한 분야에서 고객님의 안전과 신뢰를 위해 최선을 다하고 있습니다.
+  <!-- 회사 소개 -->
+  <section class="max-w-6xl mx-auto px-6 py-12">
+    <h3 class="text-3xl font-bold mb-6 text-gray-900 text-center">
+      회사 소개
+    </h3>
+    <p class="text-gray-700 max-w-4xl mx-auto leading-relaxed text-center">
+      2013년 설립 이후 두드림원은 서울아산병원, 현대오일뱅크 등 굴지의 기업과 협력하며, 특수경비와 시설경비 분야에서 높은 신뢰를 받고 있습니다.<br />
+      특수보안, 신변보호, 행사대행, 주차관리 등 다양한 서비스를 전문 인력이 체계적으로 제공합니다.
     </p>
   </section>
 
-  <!-- 서비스 간략 소개 -->
-  <section
-    class="bg-slate-200 max-w-5xl mx-auto px-6 py-10 rounded-md my-12 shadow-sm"
-  >
-    <h3 class="text-2xl font-bold mb-6 text-slate-900">주요 서비스</h3>
-    <ul class="list-disc list-inside text-gray-700 space-y-2">
-      <li>신변 보호 및 경호 서비스</li>
-      <li>시설 경비 및 특수 경비 (공항, 항만, 발전소 등)</li>
-      <li>행사 대행 및 주차 관리</li>
-      <li>맞춤형 보안 컨설팅</li>
+  <!-- 서비스 목록 -->
+  <section class="bg-gray-50 py-12">
+    <div class="max-w-6xl mx-auto px-6">
+      <h3 class="text-3xl font-bold mb-8 text-gray-900 text-center">서비스 분야</h3>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-center text-gray-700"
+      >
+        <div class="p-6 border rounded-lg shadow-sm hover:shadow-md transition">
+          <h4 class="font-semibold mb-2 text-lg">가정용 보안</h4>
+          <p>가정의 안전을 지키는 전문 경비 및 CCTV 설치, 모니터링 서비스</p>
+        </div>
+        <div class="p-6 border rounded-lg shadow-sm hover:shadow-md transition">
+          <h4 class="font-semibold mb-2 text-lg">매장용 보안</h4>
+          <p>상점 및 매장 안전을 위한 출입 통제 및 긴급 출동 서비스</p>
+        </div>
+        <div class="p-6 border rounded-lg shadow-sm hover:shadow-md transition">
+          <h4 class="font-semibold mb-2 text-lg">사무실/빌딩</h4>
+          <p>사무실과 빌딩 시설의 전반적인 경비와 안전 관리</p>
+        </div>
+        <div class="p-6 border rounded-lg shadow-sm hover:shadow-md transition">
+          <h4 class="font-semibold mb-2 text-lg">공장/창고</h4>
+          <p>공장 및 창고 보안과 안전 관리를 위한 맞춤형 서비스</p>
+        </div>
+        <div class="p-6 border rounded-lg shadow-sm hover:shadow-md transition">
+          <h4 class="font-semibold mb-2 text-lg">병원/약국</h4>
+          <p>의료 기관의 보안과 방문자 관리, 긴급 대응 서비스</p>
+        </div>
+        <div class="p-6 border rounded-lg shadow-sm hover:shadow-md transition">
+          <h4 class="font-semibold mb-2 text-lg">학원/학교/기관</h4>
+          <p>교육 기관의 안전한 환경 조성 및 출입 통제 서비스</p>
+        </div>
+        <div class="p-6 border rounded-lg shadow-sm hover:shadow-md transition">
+          <h4 class="font-semibold mb-2 text-lg">할인 혜택</h4>
+          <p>장기 계약 및 다량 서비스 이용 시 특별 할인 제공</p>
+        </div>
+        <div class="p-6 border rounded-lg shadow-sm hover:shadow-md transition">
+          <h4 class="font-semibold mb-2 text-lg">회사 소개</h4>
+          <p>두드림원에 대해 더 자세히 알고 싶다면 방문해 주세요</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 고객지원 및 뉴스(예시) -->
+  <section class="max-w-6xl mx-auto px-6 py-12">
+    <h3 class="text-3xl font-bold mb-6 text-gray-900 text-center">
+      고객지원 및 공지사항
+    </h3>
+    <ul class="max-w-3xl mx-auto space-y-4 text-gray-700 list-disc list-inside">
+      <li>
+        <strong>[2025-06-25]</strong> - 홈페이지 리뉴얼 오픈 예정 안내
+      </li>
+      <li>
+        <strong>[2025-05-10]</strong> - 신제품 CCTV 설치 서비스 출시
+      </li>
+      <li>
+        <strong>[2025-04-15]</strong> - 고객 만족도 설문조사 진행 중
+      </li>
     </ul>
   </section>
 
+  <!-- 문의 섹션 -->
+  <section
+    id="contact"
+    class="bg-gray-100 max-w-6xl mx-auto px-6 py-12 rounded-lg shadow-md mb-16"
+  >
+    <h3 class="text-3xl font-bold mb-6 text-gray-900 text-center">문의하기</h3>
+    <form
+      action="#"
+      method="POST"
+      class="max-w-3xl mx-auto space-y-6"
+      autocomplete="off"
+    >
+      <div>
+        <label class="block mb-2 font-semibold" for="name">이름</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+          placeholder="이름을 입력하세요"
+        />
+      </div>
+      <div>
+        <label class="block mb-2 font-semibold" for="email">이메일</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+          placeholder="이메일을 입력하세요"
+        />
+      </div>
+      <div>
+        <label class="block mb-2 font-semibold" for="message">문의 내용</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          required
+          class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+          placeholder="문의 내용을 입력하세요"
+        ></textarea>
+      </div>
+      <button
+        type="submit"
+        class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-6 py-3 rounded transition"
+      >
+        보내기
+      </button>
+    </form>
+  </section>
+
   <!-- 푸터 -->
-  <footer class="bg-slate-800 text-white text-sm text-center p-6 mt-12">
+  <footer class="bg-gray-900 text-gray-300 text-center py-6">
     © 2025 두드림원. All rights reserved.
   </footer>
+
+  <script>
+    // 모바일 메뉴 토글 스크립트
+    const menuBtn = document.getElementById("mobile-menu-button");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
 </body>
 </html>
+
