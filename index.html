@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>두드림원 - 보안전문회사</title>
+  <title>두드림원 - 특수 보안 전문회사</title>
   <link
     href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
     rel="stylesheet"
@@ -11,12 +11,12 @@
 </head>
 <body class="bg-gray-50 text-gray-800">
 
-  <!-- Header -->
-  <header class="bg-slate-800 text-white p-4">
+  <!-- 헤더 -->
+  <header class="bg-slate-800 text-white p-4 shadow-md">
     <div class="max-w-6xl mx-auto flex justify-between items-center">
-      <h1 class="text-2xl font-bold">두드림원</h1>
-      <nav class="space-x-4 text-sm hidden md:block">
-        <a href="index.html" class="hover:underline">홈</a>
+      <h1 class="text-3xl font-bold">두드림원</h1>
+      <nav class="space-x-6 text-sm hidden md:flex">
+        <a href="index.html" class="hover:underline font-semibold">홈</a>
         <a href="about.html" class="hover:underline">회사소개</a>
         <a href="services.html" class="hover:underline">서비스</a>
         <a href="clients.html" class="hover:underline">실적</a>
@@ -26,31 +26,49 @@
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="bg-slate-100 py-16 text-center">
-    <h2 class="text-3xl md:text-4xl font-semibold mb-4">
+  <!-- 메인 히어로 섹션 -->
+  <section
+    class="bg-slate-100 py-20 text-center max-w-4xl mx-auto rounded-lg shadow-md my-12"
+  >
+    <h2 class="text-4xl font-extrabold mb-4 text-slate-800">
       당신의 안전, 우리의 사명입니다
     </h2>
-    <p class="text-lg">특수 보안 전문기업 두드림원</p>
+    <p class="text-lg text-gray-700 mb-8">
+      두드림원은 특수 보안 업무와 시설 경비를 전문적으로 수행하는 회사입니다.
+    </p>
     <a
       href="contact.html"
-      class="mt-6 inline-block bg-slate-800 text-white px-6 py-2 rounded hover:bg-slate-700"
+      class="inline-block bg-slate-800 text-white px-8 py-3 rounded hover:bg-slate-700 transition"
       >문의하기</a
     >
   </section>
 
-  <!-- Main Content -->
-  <section class="py-12 px-4 max-w-4xl mx-auto text-center">
-    <h3 class="text-2xl font-bold mb-6 text-slate-800">
-      두드림원 홈페이지에 오신 것을 환영합니다
-    </h3>
-    <p class="text-gray-700">
-      상단 메뉴를 클릭하여 다양한 정보를 확인하실 수 있습니다.
+  <!-- 회사 주요 내용 소개 -->
+  <section class="max-w-5xl mx-auto px-6 py-10">
+    <h3 class="text-2xl font-bold mb-6 text-slate-900">회사 소개</h3>
+    <p class="text-gray-700 leading-relaxed mb-4">
+      2013년에 설립된 두드림원은 서울아산병원, 현대오일뱅크 등 굴지의 대기업과 협력하여 특수경비 및 시설경비 업무를 안정적으로 수행하고 있습니다.
+    </p>
+    <p class="text-gray-700 leading-relaxed">
+      특수보안과 경호, 행사대행, 주차관리 등 다양한 분야에서 고객님의 안전과 신뢰를 위해 최선을 다하고 있습니다.
     </p>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-slate-800 text-white text-sm text-center p-4">
+  <!-- 서비스 간략 소개 -->
+  <section
+    class="bg-slate-200 max-w-5xl mx-auto px-6 py-10 rounded-md my-12 shadow-sm"
+  >
+    <h3 class="text-2xl font-bold mb-6 text-slate-900">주요 서비스</h3>
+    <ul class="list-disc list-inside text-gray-700 space-y-2">
+      <li>신변 보호 및 경호 서비스</li>
+      <li>시설 경비 및 특수 경비 (공항, 항만, 발전소 등)</li>
+      <li>행사 대행 및 주차 관리</li>
+      <li>맞춤형 보안 컨설팅</li>
+    </ul>
+  </section>
+
+  <!-- 푸터 -->
+  <footer class="bg-slate-800 text-white text-sm text-center p-6 mt-12">
     © 2025 두드림원. All rights reserved.
   </footer>
 </body>
