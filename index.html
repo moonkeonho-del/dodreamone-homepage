@@ -1,137 +1,167 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Global Logistics</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>두드림원 보안기업</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
-      font-family: Arial, sans-serif;
-      background-color: #ffffff;
+      margin: 0;
+      font-family: 'Noto Sans KR', sans-serif;
+      line-height: 1.6;
     }
-
     header {
-      background-color: #000000;
-      color: white;
-      padding: 10px 20px;
-      text-align: center;
-      font-size: 0.9rem;
-    }
-
-    nav {
+      background-color: #003366;
+      padding: 20px 40px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 20px;
-      background-color: #003366;
       color: white;
     }
-
-    nav ul {
-      display: flex;
-      gap: 20px;
-      list-style: none;
-    }
-
-    nav ul li a {
+    header nav a {
+      margin-left: 30px;
       color: white;
       text-decoration: none;
       font-weight: bold;
     }
-
     .hero {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 60px 40px;
-      background-color: #004b87;
+      background-color: #004080;
       color: white;
-    }
-
-    .hero-text {
-      max-width: 50%;
-    }
-
-    .hero-text h1 {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-    }
-
-    .hero-text p {
-      font-size: 1rem;
-      margin-bottom: 20px;
-    }
-
-    .hero-buttons button {
-      background-color: #f44336;
-      border: none;
-      color: white;
-      padding: 10px 20px;
-      margin-right: 10px;
-      font-size: 1rem;
-      cursor: pointer;
-    }
-
-    .hero-image img {
-      max-width: 500px;
-      width: 100%;
-      border-radius: 8px;
-    }
-
-    .bottom-banner {
+      padding: 80px 20px;
       text-align: center;
-      padding: 60px 20px;
-      background-color: #f5f5f5;
     }
-
-    .bottom-banner h2 {
-      font-size: 2rem;
+    .hero h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+    .hero button {
+      margin: 10px;
+      padding: 14px 28px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      border-radius: 4px;
+    }
+    .btn-primary {
+      background-color: #ff3366;
+      color: white;
+    }
+    .btn-secondary {
+      background-color: transparent;
+      color: white;
+      border: 2px solid white;
+    }
+    section {
+      padding: 60px 40px;
+      background-color: #f2f2f2;
+    }
+    h2 {
+      font-size: 28px;
+      color: #003366;
       margin-bottom: 20px;
     }
-
-    .bottom-banner p {
-      font-size: 1rem;
-      color: #666;
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    footer {
+      padding: 20px;
+      text-align: center;
+      background-color: #003366;
+      color: white;
     }
   </style>
 </head>
 <body>
-  <header>Use this banner to inform your visitors of something important.</header>
 
-  <nav>
-    <div class="logo">GLOBAL LOGISTICS</div>
-    <ul>
-      <li><a href="#">Company Overview</a></li>
-      <li><a href="#">Service Plan</a></li>
-      <li><a href="#">Contact</a></li>
-      <li><a href="#">Careers</a></li>
-      <li><a href="#" style="color: red">Get a Quote</a></li>
-    </ul>
-  </nav>
+  <!-- 헤더 -->
+  <header>
+    <div><strong>두드림원</strong></div>
+    <nav>
+      <a href="#about">회사소개</a>
+      <a href="#services">서비스</a>
+      <a href="#projects">실적</a>
+      <a href="#contact">문의</a>
+      <a href="#quote" style="color:#ff3366;">견적받기</a>
+    </nav>
+  </header>
 
-  <section class="hero">
-    <div class="hero-text">
-      <h1>A modern template to power up your business</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egetas condimentum pretium.</p>
-      <div class="hero-buttons">
-        <button>Get a Quote</button>
-        <button style="background-color: transparent; border: 1px solid white; color: white;">Contact</button>
+  <!-- 히어로 섹션 -->
+  <div class="hero">
+    <h1>비즈니스를 강화하는 현대적인 템플릿</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas condimentum pretium.</p>
+    <button class="btn-primary">견적 받기</button>
+    <button class="btn-secondary">연락하다</button>
+  </div>
+
+  <!-- 회사 소개 -->
+  <section id="about">
+    <h2>회사 소개</h2>
+    <p>
+      두드림원은 특수 보안 및 경비 서비스를 제공하는 전문 보안회사로, 서울아산병원과 현대오일뱅크 등 다양한 고객사와 함께 안전한 환경을 구축하고 있습니다.
+    </p>
+  </section>
+
+  <!-- 서비스 -->
+  <section id="services">
+    <h2>주요 서비스</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>시설 경비</h3>
+        <p>병원, 공장, 오피스 건물 등 시설의 출입통제 및 순찰 보안 서비스 제공</p>
+      </div>
+      <div class="card">
+        <h3>특수 경호</h3>
+        <p>인물 보호, 행사 및 VIP 경호 등 특수 목적의 보안 서비스</p>
+      </div>
+      <div class="card">
+        <h3>출입 통제 시스템 운영</h3>
+        <p>보안 게이트, 카드 시스템 등 첨단 출입 통제 장비 운영</p>
       </div>
     </div>
-    <div class="hero-image">
-      <img src="https://images.unsplash.com/photo-1617957742838-b4e84e3cbd68?auto=format&fit=crop&w=800&q=80" alt="Containers">
+  </section>
+
+  <!-- 실적 -->
+  <section id="projects">
+    <h2>주요 실적</h2>
+    <div class="grid">
+      <div class="card">
+        <strong>서울아산병원</strong>
+        <p>의료시설 보안 및 특수 경비 운영</p>
+      </div>
+      <div class="card">
+        <strong>현대오일뱅크</strong>
+        <p>산업시설 출입통제 및 경비 보안</p>
+      </div>
     </div>
   </section>
 
-  <section class="bottom-banner">
-    <h2>A better way to pioneer</h2>
-    <p>Mauris et volutpat orci. Fusce nec fermentum odio. Aenean feugiat nisi vel est.</p>
+  <!-- 문의 -->
+  <section id="contact">
+    <h2>문의하기</h2>
+    <p>
+      전화: 02-1234-5678<br/>
+      이메일: contact@dodreamone.co.kr<br/>
+      주소: 서울특별시 송파구 예시로 123
+    </p>
   </section>
+
+  <!-- 푸터 -->
+  <footer>
+    © 2025 Dodreamone. All Rights Reserved.
+  </footer>
+
 </body>
 </html>
+
