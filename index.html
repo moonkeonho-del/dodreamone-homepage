@@ -74,6 +74,55 @@
       border: 2px solid white;
     }
 
+    /* 회사 소개 섹션 */
+    #about {
+      display: flex;
+      flex-direction: column;  /* 세로 방향 정렬 */
+      align-items: flex-start; /* 왼쪽 정렬 */
+      padding: 40px 20px;
+      background-color: #f4f4f4;
+    }
+
+    #about h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    #about p {
+      font-size: 16px;
+      color: #333;
+      line-height: 1.6;
+      text-align: left;  /* 텍스트 왼쪽 정렬 */
+    }
+
+    /* 서비스 섹션을 flexbox로 조정 */
+    #services {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 40px 20px;
+      background-color: #ffffff;
+    }
+
+    #services .card {
+      flex: 1;
+      min-width: 280px;
+      padding: 20px;
+      background-color: #003366;
+      color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    #services .card h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    #services .card p {
+      font-size: 16px;
+    }
+
     /* 반응형: 모바일 메뉴 정렬 */
     @media (max-width: 768px) {
       header {
@@ -124,19 +173,17 @@
   <!-- 서비스 -->
   <section id="services">
     <h2>주요 서비스</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>시설 경비</h3>
-        <p>병원, 공장, 오피스 건물 등 시설의 출입통제 및 순찰 보안 서비스 제공</p>
-      </div>
-      <div class="card">
-        <h3>특수 경호</h3>
-        <p>인물 보호, 행사 및 VIP 경호 등 특수 목적의 보안 서비스</p>
-      </div>
-      <div class="card">
-        <h3>출입 통제 시스템 운영</h3>
-        <p>보안 게이트, 카드 시스템 등 첨단 출입 통제 장비 운영</p>
-      </div>
+    <div class="card">
+      <h3>시설 경비</h3>
+      <p>병원, 공장, 오피스 건물 등 시설의 출입통제 및 순찰 보안 서비스 제공</p>
+    </div>
+    <div class="card">
+      <h3>특수 경호</h3>
+      <p>인물 보호, 행사 및 VIP 경호 등 특수 목적의 보안 서비스</p>
+    </div>
+    <div class="card">
+      <h3>출입 통제 시스템 운영</h3>
+      <p>보안 게이트, 카드 시스템 등 첨단 출입 통제 장비 운영</p>
     </div>
   </section>
 
