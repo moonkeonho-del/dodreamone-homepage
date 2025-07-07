@@ -1,138 +1,137 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>두드림원</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Global Logistics</title>
   <style>
-    body {
-      font-family: 'Arial', sans-serif;
+    * {
       margin: 0;
-      background-color: #f9f9f9;
+      padding: 0;
+      box-sizing: border-box;
     }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+    }
+
     header {
+      background-color: #000000;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
       background-color: #003366;
       color: white;
-      padding: 20px;
-      text-align: center;
-      font-size: 18px;
     }
-    nav {
-      background-color: #f1f1f1;
+
+    nav ul {
       display: flex;
-      justify-content: flex-end;
-      padding: 10px 20px;
+      gap: 20px;
+      list-style: none;
     }
-    nav a {
-      margin-left: 20px;
+
+    nav ul li a {
+      color: white;
       text-decoration: none;
-      color: #333;
       font-weight: bold;
     }
-    .container {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
-      background-color: white;
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 60px 40px;
+      background-color: #004b87;
+      color: white;
     }
-    .title {
-      font-size: 24px;
-      text-align: center;
-      margin-bottom: 10px;
-      font-weight: bold;
+
+    .hero-text {
+      max-width: 50%;
     }
-    .subtitle {
-      text-align: center;
+
+    .hero-text h1 {
+      font-size: 2.5rem;
       margin-bottom: 20px;
     }
-    .btn {
-      display: block;
-      margin: 0 auto 30px;
-      padding: 10px 20px;
-      background-color: #003366;
+
+    .hero-text p {
+      font-size: 1rem;
+      margin-bottom: 20px;
+    }
+
+    .hero-buttons button {
+      background-color: #f44336;
+      border: none;
       color: white;
+      padding: 10px 20px;
+      margin-right: 10px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .hero-image img {
+      max-width: 500px;
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .bottom-banner {
       text-align: center;
-      width: 150px;
-      text-decoration: none;
-      border-radius: 5px;
+      padding: 60px 20px;
+      background-color: #f5f5f5;
     }
-    .section-title {
-      font-size: 20px;
-      margin-top: 40px;
-      margin-bottom: 10px;
-      font-weight: bold;
-      color: #003366;
+
+    .bottom-banner h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
     }
-    .grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-    .grid div {
-      flex: 1 1 250px;
-      background-color: #f1f1f1;
-      padding: 15px;
-      border-radius: 5px;
-    }
-    footer {
-      margin-top: 40px;
-      padding: 20px;
-      background-color: #eee;
-      font-size: 14px;
+
+    .bottom-banner p {
+      font-size: 1rem;
+      color: #666;
     }
   </style>
 </head>
 <body>
+  <header>Use this banner to inform your visitors of something important.</header>
 
   <nav>
-    <a href="#">회사소개</a>
-    <a href="#">서비스</a>
-    <a href="#">실적</a>
-    <a href="#">문의</a>
+    <div class="logo">GLOBAL LOGISTICS</div>
+    <ul>
+      <li><a href="#">Company Overview</a></li>
+      <li><a href="#">Service Plan</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Careers</a></li>
+      <li><a href="#" style="color: red">Get a Quote</a></li>
+    </ul>
   </nav>
 
-<header>
-<header style="background-color: #003366; color: white; padding: 20px;">
-  <div style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;">
-    <img src="images/logo.jpg" alt="두드림원 로고" style="height: 60px;" />
-</header>
-
-  <div class="container">
-    <div class="title">당신의 안전, 우리의 사명입니다</div>
-    <div class="subtitle">특수 보안 전문기업 두드림원</div>
-    <a href="#" class="btn">문의하기</a>
-
-    <div class="section-title">회사 소개</div>
-    <p>두드림원은 특수 보안 및 경비 서비스를 제공하는 전문 보안회사로, 서울아산병원과 현대오일뱅크 등 다양한 고객사와 함께 안전한 환경을 구축하고 있습니다.</p>
-    <ul>
-      <li>특수 보안 및 경비 전문 기업</li>
-      <li>의료·산업시설 보안 경험 보유</li>
-      <li>서울아산병원, 현대오일뱅크 등과 협력</li>
-    </ul>
-
-    <div class="section-title">주요 서비스</div>
-    <div class="grid">
-      <div><strong>시설 경비</strong><br>병원, 공장, 오피스 건물 등 시설의 출입통제 및 순찰 보안 서비스</div>
-      <div><strong>특수 경호</strong><br>인물 보호, 행사 및 VIP 경호 등 특수 목적 보안 서비스</div>
-      <div><strong>출입 통제 시스템 운영</strong><br>보안 게이트, 카드 시스템 등 첨단 장비 운용</div>
+  <section class="hero">
+    <div class="hero-text">
+      <h1>A modern template to power up your business</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egetas condimentum pretium.</p>
+      <div class="hero-buttons">
+        <button>Get a Quote</button>
+        <button style="background-color: transparent; border: 1px solid white; color: white;">Contact</button>
+      </div>
     </div>
-
-    <div class="section-title">주요 실적</div>
-    <div class="grid">
-      <div><strong>서울아산병원</strong><br>의료시설 보안 및 특수 경비 운영</div>
-      <div><strong>현대오일뱅크</strong><br>산업시설 출입통제 및 경비 보안</div>
+    <div class="hero-image">
+      <img src="https://images.unsplash.com/photo-1617957742838-b4e84e3cbd68?auto=format&fit=crop&w=800&q=80" alt="Containers">
     </div>
+  </section>
 
-    <div class="section-title">문의하기</div>
-    <p>전화: 02-1234-5678<br>
-       이메일: contact@dodreamone.co.kr<br>
-       주소: 서울특별시 송파구 예시로 123
-    </p>
-  </div>
-
-  <footer>
-    © 두드림원 | 모든 권리 보유
-  </footer>
-
+  <section class="bottom-banner">
+    <h2>A better way to pioneer</h2>
+    <p>Mauris et volutpat orci. Fusce nec fermentum odio. Aenean feugiat nisi vel est.</p>
+  </section>
 </body>
 </html>
