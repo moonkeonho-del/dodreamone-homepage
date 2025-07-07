@@ -3,25 +3,43 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>두드림원 보안기업</title>
+  <title>두드림원</title>
   <style>
     body {
       margin: 0;
       font-family: 'Noto Sans KR', sans-serif;
-      line-height: 1.6;
     }
     header {
+      position: sticky;
+      top: 0;
       background-color: #003366;
-      padding: 20px 40px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      color: white;
+      padding: 16px 32px;
+      z-index: 1000;
     }
-    header nav a {
-      margin-left: 30px;
-      color: white;
+    header a {
       text-decoration: none;
+      color: white;
+      font-weight: 600;
+      margin-left: 24px;
+      transition: color 0.3s;
+    }
+    header a:hover {
+      color: #ff3366;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+    .logo img {
+      height: 40px;
+      margin-right: 10px;
+    }
+    .logo-text {
+      color: white;
+      font-size: 20px;
       font-weight: bold;
     }
     .hero {
@@ -32,7 +50,7 @@
     }
     .hero h1 {
       font-size: 36px;
-      margin-bottom: 10px;
+      margin-bottom: 16px;
     }
     .hero p {
       font-size: 18px;
@@ -55,31 +73,19 @@
       color: white;
       border: 2px solid white;
     }
-    section {
-      padding: 60px 40px;
-      background-color: #f2f2f2;
-    }
-    h2 {
-      font-size: 28px;
-      color: #003366;
-      margin-bottom: 20px;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-    }
-    .card {
-      background-color: white;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-    footer {
-      padding: 20px;
-      text-align: center;
-      background-color: #003366;
-      color: white;
+
+    /* 반응형: 모바일 메뉴 정렬 */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav {
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
     }
   </style>
 </head>
@@ -87,7 +93,10 @@
 
   <!-- 헤더 -->
   <header>
-    <div><strong>두드림원</strong></div>
+    <a href="#" class="logo">
+      <img src="logo.png" alt="로고" />
+      <div class="logo-text">두드림원</div>
+    </a>
     <nav>
       <a href="#about">회사소개</a>
       <a href="#services">서비스</a>
